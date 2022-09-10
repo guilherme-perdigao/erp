@@ -59,14 +59,14 @@ implements ApplicationRunner
     	System.out.println(">>> Pedido 2 - Ze Pequeno: "+ pedidoDoZepequeno);
     	
        
-		clienteRepository.saveAndFlush(zePequeno);
+		//clienteRepository.saveAndFlush(zePequeno);
 		System.out.println(">>> Gravado cliente 2: "+zePequeno);
 
 		List<Item> listaPedidoFernando2 = new ArrayList<Item>();
 		listaPedidoFernando2.add(dog2);
     	Pedido pedido2DoFernando  = new Pedido(ID_PEDIDO3,fernando,listaPedidoFernando2,dog2.getPreco());
     	fernando.novoPedido(pedido2DoFernando);
-    	clienteRepository.saveAndFlush(fernando);
+    	//clienteRepository.saveAndFlush(fernando);
     	System.out.println(">>> Pedido 2 - Fernando : "+ pedido2DoFernando);
     	System.out.println(">>> Gravado cliente 1: "+fernando);
 		
